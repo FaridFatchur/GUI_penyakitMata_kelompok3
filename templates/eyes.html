@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediksi Penyakit Mata</title>
+</head>
+<body>
+    <h1>Prediksi Penyakit Mata</h1>
+
+    <form id="eyeDiseaseForm">
+        <label for="age">Usia:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <label for="gadgetPerHour">Lama penggunaan gadget dalam Jam/ hari:</label>
+        <input type="number" id="gadgetPerHour" name="gadgetPerHour" required><br><br>
+        
+        <label for="wrongLens">Pernah menggunakan lensa yang salah:</label><br>
+        <input type="radio" id="yesWrongLens" name="wrongLens" value="1" required>
+        <label for="yesWrongLens">Ya</label>
+        <input type="radio" id="noWrongLens" name="wrongLens" value="0">
+        <label for="noWrongLens">Tidak</label><br><br>
+        
+        <label for="genFactor">Faktor genetik:</label><br>
+        <input type="radio" id="highGenFactor" name="genFactor" value="3" required>
+        <label for="highGenFactor">Ya</label>
+        <input type="radio" id="lowGenFactor" name="genFactor" value="1">
+        <label for="lowGenFactor">Tidak</label>
+        <input type="radio" id="dnGenFactor" name="genFactor" value="2">
+        <label for="dnGenFactor">Kurang Tahu</label><br><br>
+        
+        <label for="nutriFood">Konsumsi makanan bernutrisi:</label><br>
+        <input type="radio" id="highNutriFood" name="nutriFood" value="3" required>
+        <label for="highNutriFood">Sering</label>
+        <input type="radio" id="lowNutriFood" name="nutriFood" value="2">
+        <label for="lowNutriFood">Jarang</label>
+        <input type="radio" id="noNutriFood" name="nutriFood" value="1">
+        <label for="noNutriFood">Tidak Pernah</label><br><br>
+        
+        <input type="submit" value="Prediksi">
+    </form>
+
+    <div id="predictionResult"></div>
+
+    <!-- JavaScript untuk mengirim data form ke server -->
+    <script>
+        document.getElementById('eyeDiseaseForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Mencegah pengiriman form default
+
+            // Mengambil nilai dari form
+            var formData = new FormData(this);
+
+            // Mengirim data form ke server menggunakan fetch
+            fetch('/predict', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Menampilkan hasil prediksi di halaman web
+                document.getElementById('predictionResult').innerHTML = data.prediction;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+
+</body>
