@@ -10,38 +10,45 @@
 <body>
     <div class="container">
         <div class="form-container">
-            <h1>Formulir</h1>
-            <p>Deteksi Kemungkinan Terkena Penyakit Mata Rabun dan Silinder</p>
+            <h1>Formulir Prediksi Penyakit Mata Rabun dan Silinder</h1>
+            <p></p>
+            <!-- <p>Prediksi Penyakit Mata Rabun dan Silinder</p> -->
             <form action="/predict" method="post">
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="name">Nama</label>
+                    <p></p>
                     <input type="text" id="name" name="name" required>
-                </div>
+                </div> -->
                 
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="sex">Jenis Kelamin</label>
                     <div class="input">
                         <input type="radio" id="sex" name="sex" value="0" required>Laki-laki
                         <input type="radio" id="sex" name="sex" value="1" required>Perempuan
                     </div>
-                </div>
+                </div> -->
 
                 <div class="form-group">
                     <label for="age">Usia</label>
+                    <p></p>
                     <input type="number" id="age" name="age" min="1" max="100" required>
                 </div>
 
                 <div class="form-group">
                     <label for="gadgetPerHour">Rata-rata waktu penggunaan gadget per hari (dalam jam)</label>
                     <p>Hari yang dimaksud adalah hari kerja, yaitu Senin hingga Jumat.</p>
-                    <input type="number" id="gadgetPerHour" name="gadgetPerHour" required>
+                    <input type="number" id="gadgetPerHour" name="gadgetPerHour" min="0" max="24" required>
                 </div>
 
                 <div class="form-group">
                     <label for="wrongLens">Pernah menggunakan lensa kacamata yang salah atau tidak sesuai</label>
-                    <p>Misalnya, menggunakan kacamata milik penderita rabun atau silinder meskipun mata dalam keadaan sehat
-                        atau menggunakan lensa kacamata dengan ukuran minus, plus, atau silinder yang tidak sesuai
-                        dengan kebutuhan mata.</p>
+                    <p>
+                        <!-- Misalnya, menggunakan kacamata milik penderita rabun atau silinder meskipun mata dalam keadaan sehat
+                        atau menggunakan lensa kacamata dengan ukuran minus, plus, atau silinder yang tidak sesuai dengan
+                        kebutuhan mata. -->
+                        Misalnya, menggunakan kacamata milik penderita rabun atau silinder atau menggunakan kacamata dengan
+                        ukuran lensa yang tidak sesuai dengan kebutuhan mata.
+                    </p>
                     <div class="input">
                         <input type="radio" id="wrongLens" name="wrongLens" value="1" required>Ya
                         <input type="radio" id="wrongLens" name="wrongLens" value="0" required>Tidak
@@ -50,6 +57,7 @@
 
                 <div class="form-group">
                     <label for="genFactor">Kemungkinan penyakit mata yang diderita disebabkan oleh faktor genetik</label>
+                    <p></p>
                     <div class="input">
                         <input type="radio" id="genFactor" name="genFactor" value="3" required>Ya
                         <input type="radio" id="genFactor" name="genFactor" value="1" required>Tidak
@@ -67,22 +75,26 @@
                     </div>
                 </div>
                 
-                <button type="submit">Cek Hasil</button>
+                <div class="form-button">
+                    <button type="submit">Cek Hasil</button>
+                </div>
+                
             </form>
         </div>
 
         <div class="image-container">
-            <img src="img.png">
+            <!-- <h1>Prediksi Penyakit Mata Rabun dan Silinder</h1> -->
+            <img src="{{ url_for('static', filename='eye-2.png') }}" alt="">
         </div>
     </div>
 
     <script>
-        document.getElementById('eyeDiseaseForm').addEventListener('submit', function(event) {
+        document.querySelector('form').addEventListener('submit', function(event) {
             event.preventDefault(); // Mencegah pengiriman form default
-
+    
             // Mengambil nilai dari form
             var formData = new FormData(this);
-
+    
             // Mengirim data form ke server menggunakan fetch
             fetch('/predict', {
                 method: 'POST',
@@ -90,13 +102,18 @@
             })
             .then(response => response.json())
             .then(data => {
-                // Menampilkan hasil prediksi di halaman web
-                document.getElementById('predictionResult').innerHTML = data.prediction;
+                // Menampilkan hasil prediksi menggunakan SweetAlert
+                Swal.fire({
+                    title: 'Hasil Prediksi',
+                    text: data.prediction,
+                    icon: 'info',
+                    confirmButtonText: 'OK'
+                });
             })
             .catch(error => {
                 console.error('Error:', error);
             });
         });
-    </script>
+    </script>    
 </body>
 </html>

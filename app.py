@@ -11,33 +11,33 @@ data = pd.read_csv('data.csv')
 df = pd.DataFrame(data)
 
 # Penambahan data dummy
-dummy_data = {
-    'age': [22, 24, 25, 28, 29, 31, 34, 37, 41, 42,
-            15, 20, 20, 30, 35, 35, 45, 50, 55, 60,
-            ],
-    'gadgetPerHour': [8, 9, 6, 5, 7, 7, 5, 4, 3, 4,
-                      4, 8, 8, 4, 6, 6, 4, 4, 2, 2,
-                      ],
-    # wrongLens: 0 = Tidak; 1 = Ya
-    'wrongLens': [0, 1, 0, 0, 1, 1, 0, 1, 1, 1,
-                  1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                  ],
-    # genFactor: 1 = Tidak; 2 = Kurang Tahu; 3 = Ya
-    'genFactor': [1, 3, 2, 1, 3, 3, 1, 2, 3, 1,
-                  1, 1, 1, 3, 1, 2, 1, 1, 1, 1,
-                  ],
-    # nutriFood: 1 = Tidak; 2 = Jarang; 3 = Ya
-    'nutriFood': [3, 1, 2, 2, 1, 2, 2, 3, 2, 3,
-                  3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
-                  ],
-    'eyeDisease': [0, 1, 1, 0, 1, 1, 0, 0, 1, 0,
-                   1, 1, 0, 1, 0, 1, 0, 1, 0, 1,
-                   ],
-}
+# dummy_data = {
+#     'age': [22, 24, 25, 28, 29, 31, 34, 37, 41, 42,
+#             15, 20, 20, 30, 35, 35, 45, 50, 55, 60,
+#             ],
+#     'gadgetPerHour': [8, 9, 6, 5, 7, 7, 5, 4, 3, 4,
+#                       4, 8, 8, 4, 6, 6, 4, 4, 2, 2,
+#                       ],
+#     # wrongLens: 0 = Tidak; 1 = Ya
+#     'wrongLens': [0, 1, 0, 0, 1, 1, 0, 1, 1, 1,
+#                   1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+#                   ],
+#     # genFactor: 1 = Tidak; 2 = Kurang Tahu; 3 = Ya
+#     'genFactor': [1, 3, 2, 1, 3, 3, 1, 2, 3, 1,
+#                   1, 1, 1, 3, 1, 2, 1, 1, 1, 1,
+#                   ],
+#     # nutriFood: 1 = Tidak; 2 = Jarang; 3 = Ya
+#     'nutriFood': [3, 1, 2, 2, 1, 2, 2, 3, 2, 3,
+#                   3, 2, 3, 2, 3, 2, 3, 2, 3, 2,
+#                   ],
+#     'eyeDisease': [0, 1, 1, 0, 1, 1, 0, 0, 1, 0,
+#                    1, 1, 0, 1, 0, 1, 0, 1, 0, 1,
+#                    ],
+# }
 
-df_dummy = pd.DataFrame(dummy_data)
+# df_dummy = pd.DataFrame(dummy_data)
 
-df = pd.concat([df, df_dummy], ignore_index=True)
+# df = pd.concat([df, df_dummy], ignore_index=True)
 
 # Penanganan missing value dari data dummy
 df = df.fillna(0)
@@ -135,9 +135,11 @@ def predict_eye_disease(age, gadgetPerHour, wrongLens, genFactor, nutriFood):
     # return render_template('index.html', alert_type=alert_type, alert_message=alert_message)
 
     if prediction[0] == 0:
-        return "Anda tidak berpotensi memiliki penyakit mata (silinder, minus, dan plus)"
+        result_message = "Anda tidak berpotensi memiliki penyakit mata (silinder, minus, dan plus)"
     else:
-        return "Anda berpotensi memiliki penyakit mata (silinder, minus, dan plus)"
+        result_message = "Anda berpotensi memiliki penyakit mata (silinder, minus, dan plus)"
+
+    return result_message
 
 app = Flask(__name__)
 
