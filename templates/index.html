@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Formulir - Deteksi Kemungkinan Terkena Penyakit Mata Rabun dan Silinder</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Formulir Prediksi Penyakit Mata Rabun dan Silinder</h1>
+            <p></p>
+            <!-- <p>Prediksi Penyakit Mata Rabun dan Silinder</p> -->
+            <form action="/predict" method="post">
+                <!-- <div class="form-group">
+                    <label for="name">Nama</label>
+                    <p></p>
+                    <input type="text" id="name" name="name" required>
+                </div> -->
+                
+                <!-- <div class="form-group">
+                    <label for="sex">Jenis Kelamin</label>
+                    <div class="input">
+                        <input type="radio" id="sex" name="sex" value="0" required>Laki-laki
+                        <input type="radio" id="sex" name="sex" value="1" required>Perempuan
+                    </div>
+                </div> -->
+
+                <div class="form-group">
+                    <label for="age">Usia</label>
+                    <p></p>
+                    <input type="number" id="age" name="age" min="1" max="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gadgetPerHour">Rata-rata waktu penggunaan gadget per hari (dalam jam)</label>
+                    <p>Hari yang dimaksud adalah hari kerja, yaitu Senin hingga Jumat.</p>
+                    <input type="number" id="gadgetPerHour" name="gadgetPerHour" min="0" max="24" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="wrongLens">Pernah menggunakan lensa kacamata yang salah atau tidak sesuai</label>
+                    <p>
+                        <!-- Misalnya, menggunakan kacamata milik penderita rabun atau silinder meskipun mata dalam keadaan sehat
+                        atau menggunakan lensa kacamata dengan ukuran minus, plus, atau silinder yang tidak sesuai dengan
+                        kebutuhan mata. -->
+                        Misalnya, menggunakan kacamata milik penderita rabun atau silinder atau menggunakan kacamata dengan
+                        ukuran lensa yang tidak sesuai dengan kebutuhan mata.
+                    </p>
+                    <div class="input">
+                        <input type="radio" id="wrongLens" name="wrongLens" value="1" required>Ya
+                        <input type="radio" id="wrongLens" name="wrongLens" value="0" required>Tidak
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="genFactor">Kemungkinan penyakit mata yang diderita disebabkan oleh faktor genetik</label>
+                    <p></p>
+                    <div class="input">
+                        <input type="radio" id="genFactor" name="genFactor" value="3" required>Ya
+                        <input type="radio" id="genFactor" name="genFactor" value="1" required>Tidak
+                        <input type="radio" id="genFactor" name="genFactor" value="2" required>Kurang Tahu
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nutriFood">Sering mengonsumsi makanan bernutrisi</label>
+                    <p>Seperti wortel, ubi jalar, bayam, brokoli, kacang-kacangan, makanan yang mengandung vitamin C, dll.</p>
+                    <div class="input">
+                        <input type="radio" id="nutriFood" name="nutriFood" value="3" required>Ya
+                        <input type="radio" id="nutriFood" name="nutriFood" value="1" required>Tidak
+                        <input type="radio" id="nutriFood" name="nutriFood" value="2" required>Jarang
+                    </div>
+                </div>
+                
+                <div class="form-button">
+                    <button type="submit">Cek Hasil</button>
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="image-container">
+            <!-- <h1>Prediksi Penyakit Mata Rabun dan Silinder</h1> -->
+            <img src="{{ url_for('static', filename='eye-2.png') }}" alt="">
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Mencegah pengiriman form default
+    
+            // Mengambil nilai dari form
+            var formData = new FormData(this);
+    
+            // Mengirim data form ke server menggunakan fetch
+            fetch('/predict', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Menampilkan hasil prediksi menggunakan SweetAlert
+                Swal.fire({
+                    title: 'Hasil Prediksi',
+                    text: data.prediction,
+                    icon: 'info',
+                    confirmButtonText: 'OK'
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>    
+</body>
+</html>
