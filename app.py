@@ -125,15 +125,6 @@ def predict_eye_disease(age, gadgetPerHour, wrongLens, genFactor, nutriFood):
     data_input = [[age, gadgetPerHour, wrongLens, genFactor, nutriFood]]
     prediction = model.predict(data_input)
 
-    # if prediction[0] == 0:
-    #     alert_type = 'info'
-    #     alert_message = 'Anda tidak berpotensi memiliki penyakit mata (silinder, minus, atau plus)'
-    # else:
-    #     alert_type = 'info'
-    #     alert_message = 'Anda berpotensi memiliki penyakit mata (silinder, minus, atau plus)'
-    
-    # return render_template('index.html', alert_type=alert_type, alert_message=alert_message)
-
     if prediction[0] == 0:
         result_message = "Anda tidak berpotensi memiliki penyakit mata (silinder, minus, dan plus)"
     else:
