@@ -1,0 +1,87 @@
+timestamp,name,sex,age,typeOfEyeDisease,leftMinusSph,rightMinusSph,leftPlusSph,rightPlusSph,leftCyl,rightCyl,gadgetPerHour,wrongLens,darkAct,eyeDisease,gadgetSleep,genFactor,nutriFood
+9/25/2023 12:08:18,Rizfi,Laki-laki,20,Rabun Jauh (Mata Minus),"0,75","0,75",0,,0,,8,Tidak,Tidak,Ya,Ya,Tidak,Ya
+9/25/2023 12:10:14,ANN,Perempuan,21,Rabun Jauh (Mata Minus),"5,5","5,5",0,,0,,12,Ya,Ya,Ya,Ya,Tidak,Ya
+9/25/2023 12:11:58,Abshar Naufal ,Laki-laki,22,,,,,,,,5,Tidak,Tidak,Tidak,Ya,,Jarang
+9/25/2023 12:13:12,Cakra,Laki-laki,21,"Rabun Jauh (Mata Minus), Mata Silinder",6,6,0,,1,"0,5",8,Tidak,Tidak,Ya,Ya,Ya,Jarang
+9/25/2023 12:16:16,has,Perempuan,20,Rabun Jauh (Mata Minus),"0,5","0,5",0,,0,,12,Ya,Tidak,Ya,Ya,Kurang Tahu,Jarang
+9/25/2023 12:19:37,Adisha,Perempuan,20,,,,,,,,5,Tidak,Tidak,Tidak,Ya,,Ya
+9/25/2023 12:21:50,Adit,Laki-laki,20,Rabun Jauh (Mata Minus),4,4,0,,0,,10,Tidak,Ya,Ya,Ya,Ya,Ya
+9/25/2023 12:23:26,S,Laki-laki,21,Rabun Jauh (Mata Minus),4,4,0,,0,,10,Tidak,Ya,Ya,Ya,Kurang Tahu,Ya
+9/25/2023 12:23:45,Wira,Laki-laki,19,,,,,,,,6,Ya,Tidak,Tidak,Ya,,Ya
+9/25/2023 12:23:59,diana,Perempuan,20,Rabun Jauh (Mata Minus),2,"2,25",0,,0,,16,Ya,Ya,Ya,Ya,Tidak,Jarang
+9/25/2023 12:24:29,Are,Perempuan,20,"Rabun Jauh (Mata Minus), Mata Silinder",7,7,0,,1,1,8,Tidak,Ya,Ya,Ya,Kurang Tahu,Jarang
+9/25/2023 12:29:36,Nur,Perempuan,20,,,,,,,,18,Tidak,Ya,Tidak,Ya,,Jarang
+9/25/2023 12:30:29,F. Hanum,Perempuan,51,"Rabun Dekat (Mata Plus), Mata Silinder",0,,2,,1,"0,5",8,Ya,Tidak,Ya,Tidak,Tidak,Jarang
+9/25/2023 12:42:54,Rs,Perempuan,20,,,,,,,,18,Ya,Ya,Tidak,Ya,,Ya
+9/25/2023 12:52:10,Shabrina Al Khansa P. S. ,Perempuan,20,,,,,,,,7,Tidak,Tidak,Tidak,Ya,,Jarang
+9/25/2023 13:14:52,APS,Perempuan,19,"Rabun Jauh (Mata Minus), Rabun Dekat (Mata Plus), Mata Silinder",1,0,0,"0,5","1,25","1,25",10,Ya,Tidak,Ya,Ya,Ya,Ya
+9/25/2023 13:26:41,Yulianto,Laki-laki,52,"Rabun Dekat (Mata Plus), Mata Silinder",0,,1,"0,75","0,25","0,25",5,Tidak,Tidak,Ya,Tidak,Tidak,Ya
+9/25/2023 14:06:36,A,Laki-laki,20,"Rabun Jauh (Mata Minus), Mata Silinder","0,5","0,5",0,,"0,5","0,5",8,Ya,Ya,Ya,Ya,Tidak,Jarang
+9/25/2023 14:12:37,Fafa,Perempuan,20,"Rabun Jauh (Mata Minus), Mata Silinder",2,"1,5",0,,"0,5",1,12,Ya,Tidak,Ya,Ya,Tidak,Jarang
+9/25/2023 15:09:43,eka,Perempuan,18,,,,,,,,11,Tidak,Ya,Tidak,Ya,,Jarang
+9/25/2023 15:12:14,Wangi ,Perempuan,20,"Rabun Jauh (Mata Minus), Mata Silinder","3,5","3,5",0,,"0,5","0,5",8,Ya,Ya,Ya,Ya,Ya,Ya
+9/25/2023 15:17:01,Alfariza,Laki-laki,20,"Rabun Jauh (Mata Minus), Mata Silinder",1,1,0,,1,,4,Tidak,Ya,Ya,Ya,Ya,Ya
+9/25/2023 15:30:52,Farhan,Laki-laki,20,,,,,,,,5,Tidak,Tidak,Tidak,Tidak,,Jarang
+9/25/2023 16:53:40,Rau,Perempuan,19,Rabun Jauh (Mata Minus),2,,0,,0,,5,Tidak,Tidak,Ya,Tidak,Tidak,Jarang
+9/25/2023 17:40:55,Rendy Steven Pratama,Laki-laki,20,,,,,,,,8,Tidak,Ya,Tidak,Ya,,Ya
+9/25/2023 18:05:52,Flo,Perempuan,20,"Rabun Jauh (Mata Minus), Mata Silinder",3,5,0,,2,3,8,Ya,Tidak,Ya,Ya,Kurang Tahu,Ya
+9/25/2023 23:31:07,alma,Perempuan,19,Rabun Jauh (Mata Minus),"0,5","0,5",0,,0,,20,Tidak,Tidak,Ya,Ya,Ya,Jarang
+9/30/2023 17:43:09,Riry,Perempuan,19,"Rabun Jauh (Mata Minus), Mata Silinder","2,5","2,5",0,,"0,5",0,4,Ya,Ya,Ya,Ya,Ya,Ya
+10/2/2023 14:26:08,Noel,Laki-laki,20,Rabun Jauh (Mata Minus),2,2,0,,0,,8,Tidak,Ya,Ya,Tidak,Kurang Tahu,Jarang
+10/2/2023 17:49:22,Nano,Perempuan,21,,,,,,,,5,Tidak,Ya,Tidak,Ya,,Tidak
+10/4/2023 11:51:13,Floren,Perempuan,19,,,,,,,,10,Tidak,Ya,Tidak,Ya,,Tidak
+10/4/2023 12:01:53,Vika,Perempuan,20,"Rabun Jauh (Mata Minus), Mata Silinder","0,5",0,0,,0,"0,5",8,Ya,Tidak,Ya,Ya,Ya,Ya
+10/4/2023 12:57:33,NK,Perempuan,20,,,,,,,,8,Tidak,Ya,Tidak,Ya,,Jarang
+10/4/2023 13:28:17,PR,Perempuan,19,Rabun Jauh (Mata Minus),"1,5",2,0,,0,,8,Tidak,Ya,Ya,Ya,Tidak,Jarang
+10/5/2023 15:18:22,E,Perempuan,20,Rabun Jauh (Mata Minus),1.5,1.75,0,,0,,8,Tidak,Tidak,Ya,Tidak,Tidak,Ya
+10/5/2023 15:20:02,An,Perempuan,20,"Rabun Jauh (Mata Minus), Mata Silinder",1,0,0,,0.5,1,8,Tidak,Tidak,Ya,Ya,Tidak,Jarang
+10/5/2023 21:05:26,Hakim,Laki-laki,20,Rabun Jauh (Mata Minus),"0,5","0,5",0,,0,,16,Tidak,Tidak,Ya,Ya,Tidak,Jarang
+10/6/2023 9:51:03,A,Perempuan,21,,,,,,,,15,Tidak,Tidak,Tidak,Ya,,Jarang
+10/6/2023 13:40:25,f,Laki-laki,20,,,,,,,,7,Tidak,Ya,Tidak,Ya,,Ya
+10/6/2023 13:44:30,ja,Laki-laki,20,Rabun Jauh (Mata Minus),1,1,0,,0,,11,Tidak,Tidak,Ya,Ya,Tidak,Jarang
+10/6/2023 13:50:21,FN,Perempuan,18,"Rabun Jauh (Mata Minus), Mata Silinder","0,5","0,75",0,,1,1,7,Tidak,Ya,Ya,Ya,Tidak,Jarang
+10/6/2023 13:51:00,j,Perempuan,17,Rabun Jauh (Mata Minus),3,,0,,0,,5,Tidak,Tidak,Ya,Ya,Tidak,Ya
+10/6/2023 13:55:22,AKS,Perempuan,25,"Rabun Jauh (Mata Minus), Mata Silinder",2,"2,25",0,,"0,75","0,5",12,Ya,Ya,Ya,Ya,Ya,Jarang
+10/6/2023 13:56:46,ADS,Perempuan,23,Rabun Jauh (Mata Minus),"2,75","2,75",0,,0,,14,Ya,Tidak,Ya,Ya,Ya,Ya
+10/6/2023 13:56:47,n,Perempuan,20,Rabun Jauh (Mata Minus),"0,75","1,5",0,,0,,7,Tidak,Tidak,Ya,Ya,Tidak,Ya
+10/6/2023 13:58:32,Anth,Laki-laki,65,Rabun Dekat (Mata Plus),0,,2,2,0,,8,Tidak,Tidak,Ya,Tidak,Tidak,Ya
+10/6/2023 14:00:09,DMD,Perempuan,59,"Rabun Jauh (Mata Minus), Rabun Dekat (Mata Plus), Mata Silinder",0,"0,5","0,5","0,5","0,5","0,5",5,Ya,Ya,Ya,Ya,Ya,Ya
+10/6/2023 14:24:12,Rayhan,Laki-laki,20,,,,,,,,10,Tidak,Ya,Tidak,Ya,,Jarang
+10/6/2023 14:36:13,Ridzeu,Laki-laki,19,"Rabun Jauh (Mata Minus), Mata Silinder","0,5","0,5",0,,"0,75","0,5",12,Tidak,Ya,Ya,Ya,Tidak,Jarang
+10/6/2023 17:15:21,MFR,Laki-laki,19,"Rabun Jauh (Mata Minus), Mata Silinder","1,5","3,25",0,,"2,5","2,5",12,Tidak,Tidak,Ya,Ya,Kurang Tahu,Ya
+10/6/2023 20:59:39,marfa,Perempuan,20,,,,,,,,8,Tidak,Ya,Tidak,Tidak,,Jarang
+10/6/2023 22:23:23,Feby,Perempuan,20,Rabun Jauh (Mata Minus),"0,5","0,25",0,,0,,4,Ya,Ya,Ya,Ya,Ya,Jarang
+10/7/2023 11:37:58,Chendy,Laki-laki,21,,,,,,,,7,Tidak,Tidak,Tidak,Ya,,Ya
+10/7/2023 19:14:12,RS,Perempuan,20,,,,,,,,5,Tidak,Ya,Tidak,Ya,,Ya
+10/9/2023 10:21:16,Dinda,Perempuan,21,Rabun Jauh (Mata Minus),"3,25","3,5",0,,0,,5,Tidak,Ya,Ya,Ya,Kurang Tahu,Ya
+10/9/2023 10:28:25,R,Perempuan,20,,,,,,,,6,Ya,Tidak,Tidak,Ya,,Ya
+10/9/2023 12:18:23,AN,Laki-laki,19,,,,,,,,6,Tidak,Ya,Tidak,Ya,,Ya
+10/9/2023 13:17:14,Audrey ,Perempuan,21,"Rabun Jauh (Mata Minus), Mata Silinder","3,50","3,50",0,,"0,5","0,5",10,Tidak,Ya,Ya,Ya,Ya,Jarang
+10/9/2023 15:04:21,jojo,Perempuan,21,"Rabun Jauh (Mata Minus), Mata Silinder","0,5",0,0,,0,"0,5",6,Ya,Ya,Ya,Ya,Kurang Tahu,Ya
+10/9/2023 15:22:23,PRAHALA,Laki-laki,35,,,,,,,,4,Tidak,Ya,Tidak,Ya,,Ya
+10/10/2023 7:02:21,GC,Perempuan,20,Rabun Jauh (Mata Minus),"1,75","4,25",0,,0,,7,Ya,Ya,Ya,Ya,Ya,Ya
+10/10/2023 7:25:26,Nana,Perempuan,18,,,,,,,,18,Tidak,Tidak,Tidak,Ya,,Ya
+10/10/2023 7:26:30,Rizal,Laki-laki,20,Rabun Jauh (Mata Minus),"4,5",5,0,,0,,16,Tidak,Ya,Ya,Tidak,Tidak,Ya
+10/10/2023 7:35:46,Arya,Perempuan,21,,,,,,,,5,Ya,Ya,Tidak,Ya,,Ya
+10/10/2023 7:37:29,JESLYN ,Perempuan,16,,,,,,,,6,Tidak,Ya,Tidak,Ya,,Jarang
+10/10/2023 7:45:27,o,Perempuan,19,"Rabun Jauh (Mata Minus), Mata Silinder","5,5",6,0,,"1,5",2,11,Ya,Ya,Ya,Ya,Ya,Tidak
+10/10/2023 8:00:39,RoD,Laki-laki,18,Rabun Jauh (Mata Minus),3,3,0,,0,,5,Tidak,Ya,Ya,Ya,Ya,Ya
+10/10/2023 8:06:34,PH,Perempuan,21,Rabun Jauh (Mata Minus),"0,5","0,5",0,,0,,9,Tidak,Ya,Ya,Ya,Ya,Ya
+10/10/2023 8:13:58,Tama,Laki-laki,22,Rabun Jauh (Mata Minus),1,"1,5",0,,0,,4,Tidak,Ya,Ya,Ya,Kurang Tahu,Ya
+10/10/2023 8:17:19,Fh,Laki-laki,23,Rabun Jauh (Mata Minus),1,"0,5",0,,0,,14,Tidak,Ya,Ya,Ya,Kurang Tahu,Tidak
+10/10/2023 8:17:31,Abiyyu,Laki-laki,23,Mata Silinder,0,,0,,0.5,,6,Tidak,Ya,Ya,Ya,Tidak,Ya
+10/10/2023 8:20:13,Solc,Perempuan,52,Rabun Jauh (Mata Minus),1,"1,5",0,,0,,4,Tidak,Tidak,Ya,Ya,Kurang Tahu,Jarang
+10/10/2023 8:28:11,Indira,Perempuan,30,,,,,,,,4,Tidak,Tidak,Tidak,Ya,,Ya
+10/10/2023 8:33:01,Rana,Perempuan,17,"Rabun Jauh (Mata Minus), Mata Silinder",2,1,0,,"0,5",1,8,Tidak,Ya,Ya,Ya,Tidak,Jarang
+10/10/2023 8:34:38,L,Perempuan,20,Rabun Jauh (Mata Minus),"0,75",1,0,,0,,20,Tidak,Ya,Ya,Ya,Tidak,Ya
+10/10/2023 8:51:20,Rattu Amaliya,Perempuan,18,Rabun Jauh (Mata Minus),1,"0,75",0,,0,,8,Tidak,Tidak,Ya,Ya,Ya,Jarang
+10/10/2023 9:10:18,Figo,Laki-laki,21,Rabun Jauh (Mata Minus),1,1,0,,0,,8,Tidak,Ya,Ya,Ya,Tidak,Ya
+10/10/2023 9:12:31,Achmad Affandi Fauzan,Laki-laki,21,Rabun Jauh (Mata Minus),"1,75","1,5",0,,0,,10,Ya,Tidak,Ya,Ya,Ya,Jarang
+10/10/2023 9:45:55,Vee,Perempuan,19,"Rabun Jauh (Mata Minus), Mata Silinder",2,"0,5",0,,"0,5","0,5",12,Ya,Tidak,Ya,Ya,Tidak,Jarang
+10/10/2023 9:46:20,Bila ,Perempuan,20,"Rabun Jauh (Mata Minus), Mata Silinder",3,,0,,2.5,,10,Tidak,Ya,Ya,Ya,Tidak,Ya
+10/10/2023 11:04:57,adel,Perempuan,19,Rabun Jauh (Mata Minus),3,3,0,,0,,7,Tidak,Tidak,Ya,Ya,Tidak,Jarang
+10/10/2023 14:34:39,I,Perempuan,20,Rabun Jauh (Mata Minus),2,"1,25",0,,0,,7,Tidak,Ya,Ya,Ya,Ya,Jarang
+10/10/2023 15:23:03,Nada,Perempuan,11,"Rabun Jauh (Mata Minus), Mata Silinder","2,5",4,0,,"2,5",2,3,Tidak,Tidak,Ya,Ya,Kurang Tahu,Ya
+10/10/2023 18:30:29,M Diaz zalfa,Laki-laki,20,,,,,,,,3,Tidak,Ya,Tidak,Tidak,,Jarang
+10/11/2023 17:11:53,ayya,Perempuan,20,,,,,,,,5,Tidak,Tidak,Tidak,Ya,,Jarang
+10/11/2023 19:44:16,E,Perempuan,19,,,,,,,,8,Tidak,Ya,Tidak,Ya,,Ya
